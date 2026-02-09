@@ -10,4 +10,7 @@ messageSpace.innerHTML = "You've connected to the JavaScript!";
 /***********************************
  Functions
  * ************************************* */
-
+function pressBtn() {
+    var heading = document.getElementById("hChange");
+    heading.innerHTML = "You pressed the button!";
+}
