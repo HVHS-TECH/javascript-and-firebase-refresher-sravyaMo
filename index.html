@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <title>12COMP firebase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- firebase start ****************************************-->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- firebase end ******************************************-->
+
     <title>JavaScript and Firebase refresher</title>
+    <script type="module" src="main.mjs"></script>
+    
 </head>
 
 
@@ -27,10 +36,19 @@
         <li>Remember how to connect up the 'authorised domains'</li>
         <li>Add a button - Make it save the text to Firebase </li>
         <li>Add another button - Make it read the message from Firebase and write it to the heading of this page</li>
+        <div class="column">
+                <button onclick="fb_writeRecords()">t07: write record</button>
+                <button onclick="fb_readRecords()">t08: read record</button>
+            </div>
     </ul>
     <h4>Firebase logins</h4>
     <ul>
         <li>Use Google Authentication</li>
+        <div class="column">
+                <button onclick="fb_authenticate()">t04: authenticate</button>
+                <button onclick="fb_detectLoginChange()">t05: detect login change</button>
+                <button onclick="fb_logout()">t06: logout</button>
+        </div>
         <li>Change what the first button does. Now it saves the text and the user who entered it</li>
         <li>Change what the second button does. Now it displays all the messages and who added them</li>
     </ul>
